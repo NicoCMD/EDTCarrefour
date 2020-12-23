@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <!--TextView
+        android:id="@+id/dateoverview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="6\nnov."
+        android:textSize="12pt"
+        android:textAlignment="center"
+        android:textColor="#5C5C5C"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="12dp"/-->
+    <RelativeLayout
+        android:id="@+id/dateoverviewly"
+        android:layout_width="70dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/fisrtlinejr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="8pt"
+            android:textColor="#5C5C5C"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="-3dp"
+            android:text="LUN."
+            android:layout_marginHorizontal="12dp"/>
+        <TextView
+            android:id="@+id/scndlinenbr"
+            android:layout_below="@+id/fisrtlinejr"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:textColor="#5C5C5C"
+            android:text="6"
+            android:layout_marginHorizontal="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/dateoverviewly"
+        android:background="@drawable/custom_event_drwbl"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:id="@+id/eventtitretextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caisse"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/heureeventtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="de 14:00 à 18:00"
+            android:layout_below="@+id/eventtitretextview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-4dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
